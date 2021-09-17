@@ -7,3 +7,5 @@
 # Full Dinamic CV and Web one page - cell03/rush
 
 <img src="https://media.giphy.com/media/FknqPy7RRn6ih95xoY/giphy.gif">
+
+<img src="https://media.giphy.com/media/Vk0rr5kh8V0GqFU1OQ/giphy.gif?cid=790b76113740b5db3c02c09fda552bbb7e6c68318bdf0961&rid=giphy.gif&ct=g">
