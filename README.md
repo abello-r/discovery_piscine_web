@@ -6,3 +6,4 @@
 
 # Full Dinamic CV and Web one page - cell03/rush
 
+<img src="https://media.giphy.com/media/FknqPy7RRn6ih95xoY/giphy.gif">
