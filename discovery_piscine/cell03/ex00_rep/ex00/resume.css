@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: gainsboro;
+}
+
+.float_container{
+	background-color: #6e33d1;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.float_img{
+	width: 350px;
+	height: 500px;
+	border: 10px solid #ffffff;
+	box-shadow: 0 10px 40px (rgba(0, 0, 0, 0.5));
+	position: relative;
+	transform-origin: center -20px;
+	animation: floating 1s ease-in-out alternate infinite;
+}
+
+.float_img::before{
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	top: -40px;
+	background-color: #000000;
+	left: 50%;
+	border-radius: 50%;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.float_img::after{
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	top: -30px;
+	left: 50%;
+	z-index: -1;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes floating {
+	0%{
+		transform: rotate(-20deg);
+	}
+	100%{
+		transform: rotate(20deg);
+	}
+}
+
+.mother{
+	width: 100%;
+	height: 45vh;
+	background: gainsboro;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.glass_left{
+	width: 40%;
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba( 255, 255, 255, 0.15 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 2.5px );
+	-webkit-backdrop-filter: blur( 2.5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.glass_right{
+	width: 40%;
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba( 255, 255, 255, 0.15 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 2.5px );
+	-webkit-backdrop-filter: blur( 2.5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@font-face{
+	font-family: "The Simptext";
+	src: url("Homer_Simpson.ttf");
+}
+
+.ti_float{
+	font-family: "The Simptext";
+	background: none;
+	font-size: 60px;
+	text-align: center;
+	color: #FFD90F;
+	text-shadow: 2px 2px #000000;
+}
+
+.ti_glass_left{
+	font-family: "The Simptext";
+	background: none;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.ti_glass_right{
+	font-family: "The Simptext";
+	background: none;
+	font-size: 60px;
+}
+
+.ti_glass_list{
+	font-family: "The Simptext";
+	background: none;
+	font-size: 30px;
+}
+
+.description{
+	height: 2vh;
+	font-family: "The Simptext";
+	background: #6e33d1;
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.footer{
+	width: 100%;
+	background: #2d2e2d;
+	height: 3vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.fa-github{
+	background: none;
+	color: whitesmoke;
+}
+
+.fa-github:hover{
+	background: none;
+	color: #6e33d1;
+}
+
+.fa-linkedin{
+	background: none;
+	color: whitesmoke;
+}
+
+.fa-linkedin:hover{
+	background: none;
+	color: #6e33d1;
+}
+
+.fa-envelope{
+	background: none;
+	color: whitesmoke;
+}
+
+.fa-envelope:hover{
+	background: none;
+	color: #6e33d1;
+}
+
+.fa-beer{
+	background: none;
+	color: #FFD90F;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.skill_max{
+	width: 50%;
+	background: none;
+}
+
+.skill_min{
+	width: 95%;
+	background: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1300px) {
+	.skill_max{
+	  visibility: hidden;
+	  display: none;
+	}
+}
+
+@media (min-width: 1300px) {
+	.skill_min{
+		visibility: hidden;
+		display: none;
+	}
+}
+
+.ti_glass_list2{
+	font-family: "The Simptext";
+	background: none;
+	font-size: 30px;
+}

@@ -1,0 +1,16 @@
+.bg{
+	background-color: paleturquoise;
+}
+
+.dib{
+	width: 50%;
+}
+
+.ing{
+	background-image: url('https://ep01.epimg.net/verne/imagenes/2020/03/02/articulo/1583169237_876817_1583173125_noticia_normal.jpg');
+	background-repeat: no-repeat;
+	background-color: gainsboro;
+	float: right;
+	border-radius: 10px;
+	padding: 10px;
+}
